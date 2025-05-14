@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request a Test Drive</title>
+  <link rel="stylesheet" href="css/testdrive.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  
+  <video autoplay muted loop id="background-video">
+    <source src="videos/testdrivepage.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+  </video>
+
+  <header class="header">
+    <h1>REQUEST A TEST DRIVE</h1>
+    <p>Experience the thrill of driving a new DCD arrivals.</p>
+  </header>
+
+
+  <main class="form-container">
+  
+    <div class="column">
+      <h2>1. Your Vehicle</h2>
+      <div class="vehicle-image"></div>
+      <label for="model-year">Choose your model year</label>
+      <select id="model-year" required>
+        <option value="">Choose your model year</option>
+        <option>2025</option>
+        <option>2024</option>
+        <option>2023</option>
+      </select>
+
+      <label for="model">Choose your model</label>
+      <select id="model" required>
+        <option value="">Choose your model</option>
+        <option>Dinga</option>
+        <option>Dinga</option>
+        <option>Dinga</option>
+      </select>
+
+      <p class="note">Your selected dealer will provide you with their best selling price on this vehicle.</p>
+      <p class="note small">Image may not reflect exact vehicle or options selected.</p>
+    </div>
+
+    
+    <div class="column">
+      <h2>2. Your Information</h2>
+      <p class="privacy-text">
+        By providing my contact information below, I consent that Denver dealership and/or a DC dealer can contact me with any DCD offers and DCD product information. <a href="#">DCD Privacy Statement</a>
+      </p>
+      <label>First Name: </label>
+      <input type="text" required />
+
+      <label>Last Name: </label>
+      <input type="text" required />
+
+      <label>Phone Number:</label>
+      <input type="tel" />
+
+      <label>Email: </label>
+      <input type="email" required />
+    </div>
+
+    
+    <div class="column">
+      <h2>3. Your location</h2>
+      <input type="text" placeholder="Search by City/Town, ZIP Code, or Location" />
+      <button class="update-btn">UPDATE</button>
+
+      <label>Additional details to help your dealer with this request:</label>
+      <textarea></textarea>
+
+      <button class="submit-btn">SUBMIT</button>
+    </div>
+  </main>
+</body>
+</html>
