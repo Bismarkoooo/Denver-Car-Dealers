@@ -1,1 +1,201 @@
-/* Main stylesheet */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #111;
+}
+
+/* HEADER BAR */
+.header-bar {
+  position: relative;
+  width: 100%;
+  height: 176px;
+  overflow: hidden;
+}
+
+.header-bar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* NAVIGATION */
+.nav {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: rgb(0, 0, 0);
+  z-index: 2;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 14px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  background-color: rgb(0, 0, 0);
+  height: 4px;
+  width: 100%;
+}
+
+.nav-item {
+  font-size: 20px;
+  letter-spacing: 0.15em;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+
+/* SUB-NAVIGATION BAR BELOW HEADER */
+.sub-navbar {
+  background-color: #000000;
+  padding: 1rem 2rem;
+  display: flex;            /* Add this */
+  justify-content: center;  /* Center the nav items */
+}
+.sub-navbar-img { 
+  height: 40px; /* adjust as needed */
+  width: auto;
+}
+
+.sub-navbar ul {
+  list-style: none;
+  display: flex; /* Makes buttons horizontal */
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.sub-navbar li {
+  display: inline-block;
+}
+
+.sub-navbar a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  text-align: center; /* Centers the content */
+}
+
+.sub-navbar a:hover {
+  color: white;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.1); /* optional glow effect */
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100%;
+  width: 250px;
+  background-color: #111;
+  color: rgb(0, 0, 0);
+  transition: left 0.3s ease;
+  z-index: 3;
+  padding-top: 60px;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.sidebar-content a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 1rem 0;
+}
+
+/* SHOW SIDEBAR */
+.sidebar.show {
+  left: 0;
+}
+/*VIDEO */
+.video-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.video-section video {
+  width: 22%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .video-section video {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-section video {
+    width: 100%;
+  }
+}
+
+/* VEHICLE PANEL */
+.vehicle-panel {
+  background-color: #f9f9f9;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-panel.show {
+  max-height: 300px; /* Adjust based on content */
+}
+
+.vehicle-content {
+  padding: 1.5rem 2rem;
+}
+
+.vehicle-content h3 {
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+
+.vehicle-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.vehicle-content ul li {
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* MAIN CONTENT */
+.content {
+  padding: 2rem;
+}

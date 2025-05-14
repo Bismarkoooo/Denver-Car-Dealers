@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Denver Dealership</title>
+    <meta charset="UTF-8">
+    <title>Denver car dealership</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+    <div class="sidebar-content">
+        <p>Sidebar Menu</p>
+    </div>
+    </div>
+
+    <!-- Header Bar -->
+    <div class="header-bar">
+    <img src="images/ofc-logo.png" alt="Header Bar">
+
+    <!-- Navigation Overlay -->
+    <div class="nav">
+        <div class="menu-icon" id="menuToggle">
+        <span></span>
+        <span></span>
+        </div>
+        <div class="nav-item">VEHICLES</div>
+        <div class="nav-item">SHOP</div>
+    </div>
+    </div>
+    <!--SUB NAVIGATION -->
+    <!-- NEW NAVBAR BELOW HEADER -->
+<nav class="sub-navbar">
+    <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Vehicles</a></li>
+    <li><a href="#">Shop</a></li>
+    <li><a href="contact.html">Contact</a></li>   
+    <li><a href="#">Financing</a></li>      
+    <li><a href="#">Test Drive</a></li>                                                                                                                                                                                                                                                                                                      
+    </ul>
+</nav>
+    <section class="video-section">
+        <video src="videos/0045cffaac6e56a7aab3f31c46823be9.mp4" autoplay muted loop playsinline></video>
+        <video src="videos/2abd064798ffe4b1eece7baaee827e84_720w.mp4" autoplay muted loop playsinline></video>
+        <video src="videos/b4ab2b07c2ee0823d6815bd426b84bb3.mp4" autoplay muted loop playsinline></video>
+        <video src="videos/c6079a954a43a8939d194c2ffd3842b1.mp4" autoplay muted loop playsinline></video>
+    </section>
+    
+    <!-- VEHICLE PANEL (initially hidden) -->
+<div class="vehicle-panel" id="vehiclePanel">
+    <div class="vehicle-content">
+        <h3>Select Your Vehicle</h3>
+        <ul>
+        <li>Model A</li>
+        <li>Model B</li>
+        <li>Model C</li>
+        </ul>
+    </div>
+    </div>
+    <!-- Page Content -->
+    <div class="content">
+    <p>This is the main content of the page.</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
