@@ -24,7 +24,7 @@ body {
 .header {
   text-align: center;
   padding: 3rem 1rem 1rem;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .header h1 {
@@ -44,7 +44,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 12px;
 }
 
@@ -75,7 +75,7 @@ input, select, textarea {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid #ccc;
   border-radius: 4px;
-  color: #fff;
+  color: #787878;
 }
 
 textarea {

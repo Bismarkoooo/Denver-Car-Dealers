@@ -64,17 +64,17 @@ body {
 .sub-navbar {
   background-color: #000000;
   padding: 1rem 2rem;
-  display: flex;            /* Add this */
-  justify-content: center;  /* Center the nav items */
+  display: flex;            
+  justify-content: center;  
 }
 .sub-navbar-img { 
-  height: 40px; /* adjust as needed */
+  height: 40px; 
   width: auto;
 }
 
 .sub-navbar ul {
   list-style: none;
-  display: flex; /* Makes buttons horizontal */
+  display: flex; 
   gap: 1.5rem;
   margin: 0;
   padding: 0;
@@ -94,13 +94,13 @@ body {
   border: 2px solid transparent;
   transition: all 0.3s ease;
   border-radius: 4px;
-  text-align: center; /* Centers the content */
+  text-align: center; 
 }
 
 .sub-navbar a:hover {
   color: white;
   border: 2px solid white;
-  background-color: rgba(255, 255, 255, 0.1); /* optional glow effect */
+  background-color: rgba(255, 255, 255, 0.1); 
 }
 
 /* SIDEBAR */
@@ -172,7 +172,7 @@ body {
 }
 
 .vehicle-panel.show {
-  max-height: 300px; /* Adjust based on content */
+  max-height: 300px; 
 }
 
 .vehicle-content {
@@ -195,7 +195,7 @@ body {
   cursor: pointer;
 }
 
-/* MAIN CONTENT */
+
 .content {
   padding: 2rem;
 }
